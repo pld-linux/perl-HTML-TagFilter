@@ -5,11 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	TagFilter
-Summary:	HTML::TagFilter - An HTML::Parser-based selective tag remover
+Summary:	HTML::TagFilter - an HTML::Parser-based selective tag remover
 Summary(pl):	HTML::TagFilter - wybiórcze usuwanie znaczników oparte o HTML::Parser
 Name:		perl-HTML-TagFilter
 Version:	0.07
-Release:	1
+Release:	2
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
