@@ -10,7 +10,8 @@ Summary(pl):	HTML::TagFilter - wybiórcze usuwanie znaczników oparte o HTML::Pars
 Name:		perl-HTML-TagFilter
 Version:	0.075
 Release:	1
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8225d9362c226ee6c95972a21b9dfdc1
