@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	TagFilter
-Summary:	HTML::TagFilter - An HTML::Parser-based selective tag remover
-Summary(pl):	HTML::TagFilter - wybiórcze usuwanie znaczników oparte o HTML::Parser
+Summary:	HTML::TagFilter - an HTML::Parser-based selective tag remover
+Summary(pl):	HTML::TagFilter - wybiórcze usuwanie znaczników w oparciu o HTML::Parser
 Name:		perl-HTML-TagFilter
 Version:	0.07
 Release:	1
@@ -17,7 +17,7 @@ BuildRequires:	perl-devel >= 5.6
 %if %{!?_without_tests:1}0
 BuildRequires:	perl-HTML-Parser >= 1.0
 %endif
-BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -41,8 +41,7 @@ szczegó³owy sposób.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -58,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorlib}/%{pdir}/*.pm
+%{perl_sitelib}/%{pdir}/*.pm
 %{_mandir}/man3/*
