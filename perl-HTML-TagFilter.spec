@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
@@ -8,16 +8,16 @@
 Summary:	HTML::TagFilter - an HTML::Parser-based selective tag remover
 Summary(pl):	HTML::TagFilter - wybiórcze usuwanie znaczników oparte o HTML::Parser
 Name:		perl-HTML-TagFilter
-Version:	0.073
+Version:	0.075
 Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c4f1f9ee51352ddc27b94851b1de3221
-BuildRequires:	perl-devel >= 5.6
-%if %{!?_without_tests:1}0
+# Source0-md5:	8225d9362c226ee6c95972a21b9dfdc1
+%if %{with tests}
 BuildRequires:	perl-HTML-Parser >= 1.0
 %endif
+BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,7 +46,7 @@ szczegó³owy sposób.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
