@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTML
-%define	pnam	TagFilter
+%define		pdir	HTML
+%define		pnam	TagFilter
 Summary:	HTML::TagFilter - an HTML::Parser-based selective tag remover
 Summary(pl):	HTML::TagFilter - wybiórcze usuwanie znaczników oparte o HTML::Parser
 Name:		perl-HTML-TagFilter
