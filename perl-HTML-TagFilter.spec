@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	TagFilter
 Summary:	HTML::TagFilter - an HTML::Parser-based selective tag remover
-Summary(pl):	HTML::TagFilter - wybiórcze usuwanie znaczników oparte o HTML::Parser
+Summary(pl.UTF-8):   HTML::TagFilter - wybiÃ³rcze usuwanie znacznikÃ³w oparte o HTML::Parser
 Name:		perl-HTML-TagFilter
 Version:	0.091
 Release:	1
@@ -31,13 +31,13 @@ fine-grained way - you can specify permitted tags, permitted
 attributes of each tag, and permitted values for each attribute in as
 much detail as you like.
 
-%description -l pl
-Nazwany tak na próbê HTML::TagFilter jest podklas± HTML::Parser o
-jednym celu: usuwaniu niechcianych znaczników HTML i atrybutów z
-fragmentu tekstu. Mo¿e dzia³aæ w bardziej lub mniej precyzyjny
-sposób - mo¿na podaæ dozwolone znaczniki, dozwolone atrybuty dla
-ka¿dego znacznika, dozwolone warto¶ci dla ka¿dego atrybutu w dowolnie
-szczegó³owy sposób.
+%description -l pl.UTF-8
+Nazwany tak na prÃ³bÄ™ HTML::TagFilter jest podklasÄ… HTML::Parser o
+jednym celu: usuwaniu niechcianych znacznikÃ³w HTML i atrybutÃ³w z
+fragmentu tekstu. MoÅ¼e dziaÅ‚aÄ‡ w bardziej lub mniej precyzyjny
+sposÃ³b - moÅ¼na podaÄ‡ dozwolone znaczniki, dozwolone atrybuty dla
+kaÅ¼dego znacznika, dozwolone wartoÅ›ci dla kaÅ¼dego atrybutu w dowolnie
+szczegÃ³Å‚owy sposÃ³b.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
