@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	TagFilter
 Summary:	HTML::TagFilter - an HTML::Parser-based selective tag remover
-Summary(pl.UTF-8):   HTML::TagFilter - wybiórcze usuwanie znaczników oparte o HTML::Parser
+Summary(pl.UTF-8):	HTML::TagFilter - wybiórcze usuwanie znaczników oparte o HTML::Parser
 Name:		perl-HTML-TagFilter
 Version:	0.091
 Release:	1
