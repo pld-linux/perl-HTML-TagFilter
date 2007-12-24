@@ -8,13 +8,13 @@
 Summary:	HTML::TagFilter - an HTML::Parser-based selective tag remover
 Summary(pl.UTF-8):	HTML::TagFilter - wybiórcze usuwanie znaczników oparte o HTML::Parser
 Name:		perl-HTML-TagFilter
-Version:	0.091
+Version:	1.03
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0455b520ae21247c5bfcf0d251255d98
+# Source0-md5:	e61d2f180e3ba55e5d71293d472ffebb
 %if %{with tests}
 BuildRequires:	perl-HTML-Parser >= 1.0
 %endif
