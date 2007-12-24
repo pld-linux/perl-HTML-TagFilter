@@ -13,8 +13,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e61d2f180e3ba55e5d71293d472ffebb
+URL:		http://search.cpan.org/dist/HTML-TagFilter/
 %if %{with tests}
 BuildRequires:	perl-HTML-Parser >= 1.0
 %endif
